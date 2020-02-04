@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    width: 100%;
+}
+.nice-select:after {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 8px;
+    width: 8px;
+}
+
+/* header */
+.header {
+    padding: 20px 0 40px 0;
+    background: url('./img/header-bg.png');
+    background-size: contain;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top_left {
+    display: flex;
+    align-items: center;
+}
+.header__top_select {
+    margin-left: 20px;
+}
+.header__top_select .current {
+    color: #fff;
+    font-weight: 600;
+}
+.header__top_title {
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+}
+.header__top_tel {
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header__bottom {
+    padding-top: 40px;
+    padding-right: 60px;
+}
+.header__bottom_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.header__title {
+    font-size: 60px;
+}
+.header__desc {
+    font-size: 30px;
+}
+.header-form {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+.header-form__title {
+    padding-bottom: 25px;
+    text-align: center;
+    color: #333333;
+    font-size: 34px;
+    font-weight: bold;
+}
+.header-form__slider {
+    padding-bottom: 16px;
+}
+.slider__top {
+    display: flex;
+    justify-content: space-between;
+}
+.slider__top_summ {
+    color: #F8404B;
+    font-size: 21px;
+    font-weight: 700;
+}
+.slider__bottom {
+    padding: 10px 0;
+}
+.slider__top_title {
+    color: #888888;
+    font-size: 18px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    box-shadow: -1px 5px 9px -1px rgba(0,0,0,0.75);
+    background-color: #F8404B;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+}
+.ui-widget.ui-widget-content {
+    border-radius: 4px;
+    height: 8px;
+}
+.ui-widget-header {
+    border-color: #F8404B;
+    background-color: #F8404B;
+}
+.form-body input {
+    display: block;
+    width: 100%;
+    margin-bottom: 11px;
+    background: #F4F4F4;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+}
+.form-body button {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    background-color: #F8404B;
+}
