@@ -63,4 +63,11 @@ $( document ).ready(function() {
         }
         $('.main__tabs_item').eq(0).animate({marginLeft: left }, 300);
     });
+
+    $('.fixed-mobile-btn').click(function () {
+        var destination = $('.header__bottom_right').offset().top;
+        $('body').animate({ scrollTop: destination }, 600);
+        $('html').animate({ scrollTop: destination }, 600);
+        return false; 
+    });
 });
