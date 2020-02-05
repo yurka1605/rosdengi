@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    WINDOWSIZE = $(window).width();
+    console.log(WINDOWSIZE);
     $('.header__top_select').niceSelect();
     
     $( "#slider-summ" ).slider({
@@ -70,4 +72,11 @@ $( document ).ready(function() {
         $('html').animate({ scrollTop: destination }, 600);
         return false; 
     });
+});
+$( window ).resize(function() {
+    const currentWidth = $(window).width();
+    if (currentWidth >= '992' && WINDOWSIZE < '992') {
+        location.reload();
+    }
+    WINDOWSIZE = currentWidth;
 });
