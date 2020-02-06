@@ -28,7 +28,7 @@ $( window ).resize(function() {
 // при скролинге показываем кнопку прокрутки к форме, на мобилках
 $(window).scroll(function () {
     if ($(window).width() <= '375') {
-        var top = $('.form-body input[name="birthday"]').offset().top;
+        var top = $('.main').offset().top;
         $(window).scrollTop() >= top ?
             $('.fixed-mobile-btn').addClass('show') : $('.fixed-mobile-btn').removeClass('show');
     }
